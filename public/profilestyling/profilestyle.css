@@ -1,0 +1,1049 @@
+/* Linked with Profile.blade.php of teacher for now*/
+
+
+.profile-page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+}
+
+.profile-page-part1 {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(180deg, #EDEFFF, #FAF9F9);
+}
+
+.profile-page-part2 {
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    padding-bottom: 50px;
+}
+
+/* ///***********Side Bar Style************* */
+.user_info {
+    padding: 8% 5% 5% 5%;
+}
+
+.profile_image img {
+    /* max-width: 15%; */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    color: #041439;
+}
+
+.user-specialization {
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    color: #404f49;
+}
+
+.side-menu-list {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0%;
+}
+
+.side-menu-list-item {
+    text-decoration: none;
+    color: #404f49;
+    cursor: pointer;
+    display: block;
+    padding: 8px 16px;
+}
+
+.side-menu-list-item:hover {
+    background-color: #ffffff;
+    color: #09193e;
+    font-weight: bold;
+}
+
+.side-menu-list-item.active {
+    background-color: #c1e3d7;
+    color: white;
+}
+
+.side-menu-list-item.active:hover {
+    background-color: #c1e3d7;
+    color: white;
+}
+
+/* *******Show Profile******** */
+.profile-display {
+    padding: 2%;
+}
+
+.main-course-page-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.page-box {
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+    border: 1px solid #041439;
+    border-radius: 3px;
+    padding: 4%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.page-box:hover {
+    background-color: #ffffff;
+}
+
+.page-box h1 {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.page-box p {
+    text-align: justify;
+}
+
+.show_profile_info tr th,
+td {
+    padding: 1% 2% 1% 2%;
+}
+
+.show_profile_info tr {
+    border: 1px solid #041439;
+    padding: 1% 2% 1% 2%;
+
+}
+
+.show_profile_info table {
+    width: 100%;
+    text-align: left;
+}
+
+.show_profile_info table th {
+    width: 15%;
+}
+
+.show_profile_info table td {
+    width: 70%;
+}
+
+.show_profile_info table a {
+    text-decoration: none;
+    color: #041439;
+}
+
+.show_profile_info_about h1 {
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.show_profile_info_about p {
+    display: block;
+    background-color: #eeeded;
+    border-radius: 2px;
+    border: 1px solid black;
+    padding: 2% 2% 2% 2%;
+}
+
+.mail-send-button {
+    padding: 4% 8%;
+    background-color: #eeeded;
+    color: #041439;
+    border: 1px solid #041439;
+}
+
+
+
+
+/*********Form Styling ********/
+/* .form-control{
+    color: #eeeded;
+} */
+
+#Edit-profile h1 {
+    font-size: 200%;
+    color: #041439;
+    margin-bottom: 20px;
+}
+
+#Edit-profile .form-group,
+#create_new_course .form-group,
+#uploadContent .form-group,
+#Edit-courses .form-group,
+#Take_new_Assessment .form-group,
+#Edit_content .form-group,
+#assesment_edit .form-group,
+#performance-form .form-group,
+#studentsForm .form-group {
+    margin-bottom: 15px;
+}
+
+#Edit-profile .form-control,
+#Edit-profile .form-control-file,
+#create_new_course .form-control,
+#uploadContent .form-control,
+#Edit-courses .form-control,
+#Take_new_Assessment .form-control,
+#Edit_content .form-control,
+#assesment_edit .form-control,
+#performance-form .form-control,
+#studentsForm .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 100%;
+    background-color: #eeeded5f;
+    border: 1px solid #9b9b9b;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#Edit-profile .form-control:focus,
+#create_new_course .form-group:focus,
+#uploadContent .form-group:focus,
+#Edit-courses .form-control:focus,
+#Take_new_Assessment .form-control:focus,
+#Edit_content .form-control:focus,
+#assesment_edit .form-control:focus,
+#performance-form .form-control:focus,
+#studentsForm .form-control:focus {
+    border-color: #041439;
+    outline: 1;
+    box-shadow: 10px 0 10px #80bdff80;
+}
+
+#Edit-profile .form-control-file,
+#create_new_course .form-control-file,
+#uploadContent .form-control-file,
+#Edit-courses .form-control-file,
+#Take_new_Assessment .form-control-file,
+#Edit_content .form-control-file,
+#assesment_edit .form-control-file,
+#performance-form .form-control-file,
+#studentsForm .form-control-file {
+    padding: 5px;
+}
+
+#Edit-profile label,
+#create_new_course label,
+#uploadContent,
+#Edit-courses,
+#Take_new_Assessment,
+#Edit_content,
+#assesment_edit,
+#performance-form,
+#studentsForm {
+    font-weight: bold;
+    color: #041439;
+    margin-bottom: 5px;
+}
+
+#Edit-profile textarea.form-control,
+#create_new_course textarea.form-control,
+#uploadContent textarea.form-control,
+#Edit-courses textarea.form-control,
+#Take_new_Assessment textarea.form-control,
+#Edit_content textarea.form-control,
+#assesment_edit textarea.form-control,
+#performance-form textarea.form-control,
+#studentsForm textarea.form-control {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.profilebtn {
+    margin-top: 10px;
+    padding: 1% 3%;
+    background-color: #eeeded;
+    border: 1px solid #041439;
+    color: #041439;
+    margin-right: 4px;
+}
+
+/* #Edit-profile .btn:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+} */
+
+
+/* //Performance form styling */
+/*********Custom Form Styling ********/
+
+#performanceFormSection .form-group-custom {
+    margin-bottom: 15px;
+}
+
+#performanceFormSection .form-control-custom {
+    width: 100%;
+    padding: 10px;
+    font-size: 100%;
+    background-color: #eeeded5f;
+    border: 1px solid #9b9b9b;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#performanceFormSection .form-control-custom:focus {
+    border-color: #04143900;
+    outline: 1;
+    box-shadow: 10px 0 10px #80bdff80;
+}
+
+#performanceFormSection .form-control-file-custom {
+    padding: 5px;
+}
+
+#performanceFormSection label {
+    font-weight: bold;
+    color: #041439;
+    margin-bottom: 5px;
+}
+
+#performanceFormSection textarea.form-control-custom {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.profilebtn-custom {
+    margin-top: 10px;
+    padding: 1% 3%;
+    background-color: #eeeded;
+    border: 1px solid #041439;
+    color: #041439;
+    margin-right: 4px;
+}
+
+
+/* *******Account Security****** */
+
+
+#account-security h1 {
+    font-size: 200%;
+    color: #041439;
+    margin-bottom: 20px;
+}
+
+#account-security .form-group {
+    margin-bottom: 15px;
+}
+
+#account-security .form-control,
+#account-security .form-control-file {
+    width: 100%;
+    padding: 10px;
+    font-size: 100%;
+    background-color: #eeeded5f;
+    border: 1px solid #9b9b9b;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#account-security .form-control:focus {
+    border-color: #041439;
+    outline: 1;
+    box-shadow: 10px 0 10px #80bdff80;
+}
+
+#account-security .form-control-file {
+    padding: 5px;
+}
+
+#account-security label {
+    font-weight: bold;
+    color: #041439;
+    margin-bottom: 5px;
+}
+
+#account-security textarea.form-control {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+
+/********************** courses ************************/
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    /* height: 100%; */
+    padding: 2% 3% 2% 3%;
+    margin: 0%;
+}
+
+.course-box {
+    /* height: auto; */
+    height: 450px;
+    width: 335px;
+    border: 1px solid #041439;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.course-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Reduced shadow to give pressed effect */
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-header p {
+    font-size: 90%;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-box h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.course-banner {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    /* margin-bottom: 15px; */
+    border: 1px solid #041439;
+}
+
+.course-overview {
+    flex: 1;
+    padding: 3%;
+    color: #000;
+}
+
+.course-overview p {
+    margin: 0% 0% 0% 0%;
+}
+
+.course-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btnprimary,
+.btndanger {
+    background-color: #ffffff;
+    color: #041439;
+    border: 1px solid #041439;
+    padding: 2% 4%;
+    text-decoration: none;
+}
+
+.btndanger {
+    background-color: #efcecc;
+    color: #041439;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    opacity: 0.8;
+}
+
+.contentaccordion-header {
+    background: linear-gradient(180deg, #EDEFFF, #FAF9F9);
+    cursor: pointer;
+    padding: 1px;
+    color: #041439;
+}
+
+.contentaccordion-body {
+    border: 1px solid #041439;
+    padding: 5px;
+    color: #041439;
+    margin-bottom: 2%;
+}
+
+.contentaccordion-button {
+    background: linear-gradient(180deg, #EDEFFF, #FAF9F9);
+    border: none;
+    border: 1px solid #041439;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    color: #041439;
+}
+
+/* Table styling */
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.content-table thead tr th,
+.content-table tbody tr td {
+    border: 1px solid #041439;
+    padding: 8px;
+}
+
+.contentbtnprimary,
+.btndanger {
+    padding: 6px 12px;
+    border: 1px solid #041439;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentbtnprimary {
+    background-color: #ffffff;
+    color: #041439;
+}
+
+.btndanger {
+    background-color: #efcecc;
+    color: #041439;
+}
+
+.contentbtnprimary:hover {
+    background-color: #f5f5f5;
+}
+
+.btndanger:hover {
+    background-color: #f3c3c0;
+}
+
+/* Fixing button alignment */
+.form-content {
+    margin: 0;
+}
+
+
+/* ***************** Manage Students *********** */
+.profile-display-box-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 2% 3%;
+    margin: 0%;
+}
+
+.profile-box {
+    width: 335px;
+    padding-bottom: 20px;
+    border: 1px solid #041439;
+    border-radius: 2px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #041439;
+}
+
+.profile-picture {
+    flex: 0 0 120px;
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    flex: 1;
+    padding-left: 15px;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    font-size: 90%;
+}
+
+.profile-details {
+    padding: 15px;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+.courses {
+    margin-top: 10px;
+}
+
+.courses-inside {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses p {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.courses ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.courses ul li {
+    margin-bottom: 5px;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btndanger {
+    background-color: #f3c3c0;
+    color: #041439;
+    border: 1px solid #041439;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btndanger:hover {
+    background-color: #e1b3af;
+}
+
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select {
+    display: none;
+    /* Hide the default select */
+}
+
+.custom-select-display {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.custom-select-options {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.custom-select-options div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.custom-select-options div:hover {
+    background-color: #f1f1f1;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* ***********Chat*************** */
+
+.custom-container {
+    padding: 1rem;
+}
+
+.custom-accordion {
+    border: 1px solid #7a8a9c;
+    /* border-radius: 4px; */
+    overflow: hidden;
+}
+
+.custom-accordion-item {
+    border-bottom: 1px solid #7a8a9c;
+}
+
+.custom-accordion-header {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-accordion-button {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+}
+
+.custom-accordion-button.expanded {
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+}
+
+.custom-accordion-collapse {
+    display: none;
+}
+
+.custom-accordion-collapse.show {
+    display: block;
+}
+
+.custom-accordion-body {
+    padding: 1rem;
+    /* background-color: #ddddf4; */
+
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #8b8282;
+    padding: 0.75rem;
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.custom-table th {
+    background-color: #f2f2f3;
+}
+
+.chatbtn {
+    padding: 4% 12%;
+    border: 1px solid #041439;
+    text-decoration: none;
+    color: #041439;
+    background-color: #f2f2f3;
+    text-align: center;
+}
+
+/* \\************* */
+
+.chatcontainer {
+    width: 100%;
+    /* max-width: 1200px; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000000; */
+    /* border-radius: 4px; */
+    padding: 10px 20px 10px;
+    /* background-color: #d0d0f2; */
+    /* box-shadow: 2px 0 6px #4d505380; */
+}
+
+/* .outerbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #d0d0f2;
+} */
+
+/* to display users and  chat in similar line*/
+.row {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.userboxoter,
+userboxoter2 {
+    flex: 0 0 45%;
+    /* max-width: 40%; */
+    border: 1px solid #041439;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+    padding: 4% 2%;
+}
+
+.recentwordbox {
+    background-color: #bcc8e5;
+    padding: 2%;
+    border: 1px solid #041439;
+}
+
+.recentword {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.norecentchats {
+    font-size: 100%;
+    padding: 2%;
+}
+
+.listofuserschat {
+    /* height: 20%; */
+    display: block;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #b5b5b5;
+    text-decoration: none;
+}
+
+.listofuserschat:hover {
+    background-color: #f1f3ff;
+}
+
+.mediabody {
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    width: 100%;
+}
+
+.mediabodypart1 {
+    width: 13%;
+    height: 100%;
+}
+
+.mediabodypart1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #041439;
+}
+
+.mediabodypart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+}
+
+.mediabodypart2_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.mediabodypart2_1 h6 {
+    color: #142d67;
+    font-weight: bold;
+}
+
+.lastupdatedmessage {
+    font-size: medium;
+    color: #666666;
+    /* font-style: italic; */
+}
+
+.userchattime {
+    font-size: small;
+    color: #838080;
+    text-align: right;
+}
+
+.inboxheader {
+    background-color: #bcc8e5;
+    padding: 2%;
+    border: 1px solid #041439;
+    margin-bottom: 3px;
+}
+
+
+.sendermessagebox {
+    margin-left: 30%;
+}
+
+.sendermessage {
+    background-color: #f1f3ff;
+    color: #041439;
+    padding: 2% 4%;
+    margin: 3px 6px;
+    border: 1px solid #041439;
+}
+
+.sendermessage span {
+    font-size: 80%;
+    margin-top: 1%;
+    color: #58595b;
+}
+
+.receivermessagebox {
+    margin-left: 1%;
+    width: 70%;
+}
+
+.receivermessage {
+    background-color: #f0f0f0;
+    color: #041439;
+    padding: 2% 4%;
+    margin: 3px 6px;
+    border: 1px solid #041439;
+}
+
+.inputmessagebox {
+    display: flex;
+    border-top: 1px solid #757575;
+    background-color: #e8e7eb;
+
+}
+
+.inputmessagebox input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+/* .inputmessagebox button {
+    padding: 5px 10px;
+    margin: 2%;
+    background-color: #dbcddc;
+    color: #041439;
+    border: 1px solid #041439;
+    cursor: pointer;
+} */
+
+/* .inputmessagebox button:hover {
+    background-color: #0056b3;
+} */
+
+.discussion-board-inside-box {
+    /* display: flex; */
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2% 4%;
+    margin-bottom: 1%;
+}
+
+.board-part1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.board-part1-1 {
+    width: 80%;
+}
+
+.board-part1-1 a {
+    text-decoration: none;
+    color: #1d2c79;
+}
+
+.board-part2 {
+    padding-left: 3%;
+    color: #6d6d6d;
+}
+.discussion-board-display{
+    height:auto;
+    width: 100%;
+}
+.discussion-board-display-banner{
+    background-color: rgb(251, 252, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+    font-size: 100%;
+}
+.discussion-board-display-banner h1{
+    font-size: 200%;
+}
+.discussion-board-display-banner p{
+    color: #6d6d6d;
+}
+.discussion-board-body{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.d-description{
+    width: 80%;
+    padding: 2%;
+}
+.description-text{
+
+    text-align: justify;
+}
+.d-image{
+    width: 50%;
+}
+.commentsection{
+    padding: 2%;
+}

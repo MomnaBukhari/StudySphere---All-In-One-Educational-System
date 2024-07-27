@@ -1,0 +1,819 @@
+/* This file is linked with Home Page Layout Styling */
+
+/************************************Main Body Styling************************************/
+
+*{
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-family: "Be Vietnam Pro", sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0%;
+    padding: 0;
+    line-height: 1.5; /* to set the line gap overall*/
+    overflow-x: hidden;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f6f4;
+
+}
+::selection {
+    background: #0b245b; /* Custom background color for selected text */
+    color: #fff; /* Custom text color for selected text */
+  }
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    width: 5px;
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    width: 1em;
+    background-color: #ddd;
+    outline: 1px solid slategrey;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.maincontent{
+    flex: 1;
+}
+
+#cursor{
+    height: 40px;
+    width: 40px;
+    background-color: #b2e6ed;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 0;
+}
+
+/************************************Nav Bar Styling************************************/
+
+#NavBar{
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+.logo{
+color: #ffffff;
+margin-left: 4%;
+background-color: transparent !important;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #041439;
+    /* background: linear-gradient(135deg, #FAF9F9, #d8e8e5); */
+    /* padding: 10px 25px; */
+    padding: 0.5%;
+    border: 1px solid rgba(0, 0, 0, 0.458);
+}
+nav:hover{
+    padding: 0.6%;
+    /* background-color: #537f84; */
+    background-color: #09193e;
+    /* background: linear-gradient(160deg, #FAF9F9, #d8e8e5); Gradient background on hover */
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Navbartpart1{
+    height: 100%;
+    width: 40%;
+}
+.main_menu{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 2%;
+}
+
+section nav div a{
+    text-decoration: none;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 100%;
+}
+.section1 nav div a:hover{
+    text-decoration: none;
+    font-size: 102%;
+    text-decoration: underline;
+    /* transition-delay: 0.1s; */
+    transition-duration: 0.5s;
+}
+
+
+/************************************Footer Styling************************************/
+
+.footer{
+    background-color: #041439;
+    margin-top: 2%;
+    /* border: 1px solid black; */
+    padding: 2%;
+    color: #ffffff;
+}
+.footer:hover{
+    background-color: #09193e;;
+    /* background: linear-gradient(175deg, #FAF9F9, #d8e8e5); Gradient background on hover */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+
+
+/*********************************************************************************/
+.homePageCenter {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 6%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+}
+
+
+.homePageCenterPart1{
+
+    padding-top: 5%;
+    height: 100%;
+    width: 60%;
+}
+.homePageCenterPart2{
+    height: 100%;
+    width: 40%;
+    flex: 1;
+    /* background: url('Illustrations/TeacherDashboard2.png')center center fixed; */
+}
+.homePageCenterPart1 h1{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 200%;
+}
+.homePageCenterPart1 p{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin-right: 10%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+/* .homePageCenterPart1 a{
+    padding-top: 2%;
+} */
+
+
+
+.homePageCenterPart2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.home_page_signup_button {
+    text-decoration: none;
+    padding: 3% 9%;
+    margin-top: 20%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: all 0.5s ease; /* Transition for smooth hover effect */
+}
+.home_page_signup_button:hover {
+    padding: 3.5% 9.5%;
+    box-shadow:  2px 2px rgba(137, 137, 137, 0.663); /* Adjusted shadow for hover */
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+
+/* .home_page_signup_button_link
+{
+   text-decoration: none;
+   color:#1d2624;
+} */
+
+.highlight{
+    background-image:linear-gradient(#DEFF70,#DEFF70);
+    background-size: 0% 100% ;
+    background-repeat: no-repeat;
+    transition: background-size 1s ease-in;
+}
+
+.scrollcirlce{
+    position: absolute;
+    background-color:#cdeef2;
+    border-radius: 50%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 3%;
+    /* text-align: left; */
+    bottom: 20px; /* Adjust this value as needed */
+    right: 20px; /* Adjust this value as needed */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Add cursor pointer for interaction */
+}
+/* .scrollcirlce:hover{
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#afd6db;
+} */
+
+
+
+
+/* ?*********Member Section********* */
+/* Adjust the margin-top of .memberSectionparent to overlap with .homePageCenterPart1 */
+.memberSectionparent {
+    position: relative;
+    z-index: 1;
+    margin-top: -60px;
+    padding: 2% 15% 2% 15%;
+    /* background: linear-gradient(180deg, #EDEFFF, #FAF9F9); */
+    /* background: url('/patterns/boxes.jpg') repeat center center fixed; */
+}
+
+/* Keep .memberSection as it is */
+.memberSection {
+    text-align: justify;
+    padding: 5%;
+    background-color: #ffffff; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.memberSection h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #030f2b;
+    overflow-y: hidden;
+}
+
+.memberSection p {
+    line-height: 1.5;
+    color: #666;
+    overflow-y: hidden;
+}
+
+.memberSection .dashboardLink {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #09193e;
+    color: #f1f3f8;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.memberSection .dashboardLink:hover {
+    background-color: #030f2b;
+}
+
+/* *******************************************Dynamic Stats display******************** */
+/* Dynamic statistics container */
+.dynamic-stats {
+    width: 100%;
+    padding: 4% 0;
+}
+
+/* Heading for dynamic statistics */
+.dynamic-stats-heading {
+    padding: 2% 0% 3% 12%;
+    color: #030f2b;
+}
+
+/* Section to hold the dynamic stats boxes */
+.dynamic-stats-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%; /* Add padding for spacing around the section */
+}
+
+/* Styling for individual dynamic stats boxes */
+.dynamic-stats-box {
+    padding: 4%;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 1%; /* Add margin to create space between the boxes */
+    border-radius: 8px;
+    border: solid black 1px;
+}
+
+.dynamic-stats-box:hover {
+    transform: translateY(5px); /* Move the box down slightly */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Reduced shadow to give pressed effect */
+}
+
+/* Different background colors for the boxes */
+.stats-box1 {
+    background-color: #f7fafb;
+    transition: background-color 0.3s ease;
+}
+
+.stats-box2 {
+    background-color: #f3f4fd;
+    transition: background-color 0.3s ease;
+}
+
+.stats-box3 {
+    background-color: #f7fafb;
+    transition: background-color 0.3s ease;
+}
+
+.stats-box4 {
+    background-color: #f3f4fd;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect with gradient background */
+.stats-box1:hover {
+    background: linear-gradient(180deg, #f7fafb 0%, #ffffff 100%);
+}
+
+.stats-box2:hover {
+    background: linear-gradient(180deg, #f3f4fd 0%, #ffffff 100%);
+}
+
+.stats-box3:hover {
+    background: linear-gradient(180deg, #f7fafb 0%, #ffffff 100%);
+}
+
+.stats-box4:hover {
+    background: linear-gradient(180deg, #f3f4fd 0%, #ffffff 100%);
+}
+
+
+/* Styling for the box headings */
+.dynamic-stats-box h2 {
+    font-size: 1.5rem;
+    color: #030f2b;
+    margin-bottom: 10px;
+}
+
+/* Styling for the box paragraphs */
+.dynamic-stats-box p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Styling for the unordered lists in the boxes */
+.dynamic-stats-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the list items in the boxes */
+.dynamic-stats-box ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #666;
+}
+
+
+/* Counter Animation */
+/* .counter {
+    font-size: 1.5rem;
+    color: #030f2b;
+} */
+
+
+/********************************************************************************8*/
+.bigtext{
+    font-size: 20vw;
+    text-transform:uppercase;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.benefits
+{
+    padding: 6% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.benefits h2{
+    /* background-color: #BEE3DB; */
+    padding: 2%;
+    margin-left: 0%;
+    margin-right: 5%;
+    color: #000000;
+    font-size: 200%;
+    white-space: nowrap;
+    /* background: linear-gradient(175deg, #FAF9F9, #d8e8e5); */
+}
+.benefits p{
+    text-align: justify;
+}
+
+
+/* *************************************************************** */
+/* Keep the existing background image for .section2 */
+.section2 {
+    cursor: url('/Illustrations/circle_cursor.png'), auto;
+}
+
+/* Adjust styles for .boxes and .elem */
+.boxes {
+    height: 60%;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.elem {
+    flex-shrink: 0;
+    margin-bottom: 10%;
+    padding: 5%;
+    width: 45%;
+    border: 1px solid black;
+    background: linear-gradient(180deg, #EDEFFF, #FAF9F9);
+    /* transition: background-color 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.elem:hover {
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+
+    /* background-color: #ffffff; */
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+.elem h4{
+    overflow-y: hidden;
+}
+.elem p{
+    overflow-y: hidden;
+}
+
+.section3{
+display: block;
+width: 100%;
+height: 100%;
+}
+#top{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: #97c1b8; */
+    }
+#bottom{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: #97c1b8; */
+}
+#center{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rollbaseddasboard{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 6%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+
+}
+.rollbaseddasboardpart1{
+    padding: 10% 0%;
+    height: 100%;
+    width: 60%;
+}
+.rollbaseddasboardpart2{
+    height: 100%;
+    width: 40%;
+    flex: 1;
+}
+.rollbaseddasboardpart1 h2{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 200%;
+    overflow-y: hidden;
+}
+.rollbaseddasboardpart2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.rollbaseddasboardpart1 p{
+    overflow-y: hidden;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin-right: 10%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+.rollbaseddashboardbutton{
+    text-decoration: none;
+    padding: 3% 9%;
+    margin-top: 20%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    transition: all 0.5s ease; /* Transition for smooth hover effect */
+}
+.rollbaseddashboardbutton:hover {
+    padding: 3.5% 9.5%;
+    box-shadow:  2px 2px rgba(137, 137, 137, 0.663); /* Adjusted shadow for hover */
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+}
+/* .rollbaseddasboard:hover{
+    color: #000;
+    font-size: 110%;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+} */
+
+
+
+.cards {
+    font-size: 200%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff27;
+    border: 1px solid black;
+    padding: 3%;
+    margin: 1%;
+    color: #000;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.card-button {
+    flex-shrink: 0;
+    padding-left: 10px; /* Adjust padding as needed */
+}
+
+.card-button a {
+    font-size: 70%; /* Adjust font size as needed */
+    text-decoration: none;
+    color: #ffffff; /* Adjust color as needed */
+    border: 1px solid black; /* Optional: Add a border to make it look like a button */
+    padding: 7px 15px; /* Fixed padding for button-like appearance */
+    background-color: #041439; /* Optional: Button background color */
+    border-radius: 2px; /* Optional: Rounded corners */
+}
+.card-button a:hover{
+    background-color: #102772;
+}
+
+.roleteacherdashboard, .rolestudentdashboard, .roleguardiandashboard {
+    background-color: #ffffff27;
+}
+
+
+/* .move{
+    width: 100%;
+    height: 100%;
+    /* box-sizing: border-box;
+    background-color: #DEFF70;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-weight: lighter;
+/* }
+.marque{
+    font-size: 100%;
+    padding: 2%;
+    display: flex;
+} */
+/************************************HELP************************************/
+
+.sectionhelp{
+    padding-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    /* background-color: #9f8381; */
+}
+
+.help_heading1{
+    padding: 20px;
+    font-size: 200%;
+}
+
+.studysphere_link_in_help {
+    position: relative; /* Required for absolute positioning of pseudo-element */
+    text-decoration: none;
+    color: #000000;
+    overflow: hidden; /* Ensure overflow is hidden to hide the ::before pseudo-element */
+}
+
+.studysphere_link_in_help::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust the height of the filling animation */
+    background-color: #000000; /* Initial background color */
+    transition: width 0.3s ease; /* Transition the width property for the filling effect */
+}
+
+.studysphere_link_in_help:hover::before {
+    width: 100%; /* Expand the width to 100% on hover */
+    background-color: #cdeef2; /* Change the background color on hover */
+}
+
+hr {
+    width: 80%; /* Adjust the width to set the length of the line */
+    border: none;
+    border-top: 1px solid black; /* Set the line thickness and color */
+    margin: 20px auto;
+}
+.section1_1::selection{
+    background-color: #33ff00;
+    color: #ffffff;
+}
+
+.faq{
+    background-color:#fAf9f9;
+    width: 100%;
+}
+.faq .question {
+    margin-bottom: 20px;
+
+}
+
+.faq .question h4 {
+    font-size: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.faq .answer {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+    font-size: 100%;
+
+}
+
+.faq .question.active .answer {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /// Older LLayout cotent */
+/************************************Main Content of Layout Changes************************************/
+
+.flex-item {
+    flex: 1; /* Allow flex items to grow and fill the available space */
+    text-align: center; /* Center the text within the flex items */
+    text-align: justify;
+}
+
+
+/* Hero section styles */
+.hero-section {
+    background-color: #FAF9F9;
+    /* Set the background color */
+    color: #041439;
+    /* Set the text color */
+    padding: 100px 20px;
+    /* Add padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.hero-section p {
+    font-size: 18px;
+    /* Set the font size */
+    color: #000000;
+    /* Set the text color */
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    /* Set the font size */
+    margin-bottom: 20px;
+    /* Add spacing at the bottom */
+}
+
+
+
+
+
+/************************************Sign Up/ Page Changes************************************/
+
+
+/* ///////////////////// */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 400px; /* Adjust height as needed */
+    overflow-y: auto;
+}
+
+.box {
+    width: calc(33.33% - 10px);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box-content {
+    padding: 10px;
+    display: none;
+}
+
+.box-content p {
+    margin: 0;
+}
+
+.active {
+    display: block;
+}
+
+/* ////////////////////////////////////Errors ////////////////////// */
+.error_display{
+    font-size: 70%;
+    color: red;
+}
+
+/* ///Some chnages I did previously. right now i dunno why, i will see them later */
+
+
+.flex-item {
+    flex: 1; /* Allow flex items to grow and fill the available space */
+    text-align: center; /* Center the text within the flex items */
+    text-align: justify;
+}
+
+/* Hero section styles */
+.hero-section {
+    background-color: #FAF9F9;
+    /* Set the background color */
+    color: #041439;
+    /* Set the text color */
+    padding: 100px 20px;
+    /* Add padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+.hero-section p {
+    font-size: 18px;
+    /* Set the font size */
+    color: #000000;
+    /* Set the text color */
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    /* Set the font size */
+    margin-bottom: 20px;
+    /* Add spacing at the bottom */
+}
+
+
+

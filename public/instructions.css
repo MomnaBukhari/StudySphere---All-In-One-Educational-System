@@ -1,0 +1,70 @@
+*{
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-family: "Be Vietnam Pro", sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0%;
+    padding: 0;
+    line-height: 1.5; /* to set the line gap overall*/
+    overflow-x: hidden;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #FAF9F9, #EDEFFF);
+}
+::selection {
+    background: #0b245b; /* Custom background color for selected text */
+    color: #fff; /* Custom text color for selected text */
+  }
+
+
+.container {
+    max-width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: left;
+    overflow-y: hidden;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #041439;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 3% 5%;
+}
+
+.back-link:hover {
+    background-color: #f0f0f0;
+}
+
+.content h1 {
+    color: #041439;
+    font-size: 24px;
+    text-align: center;
+    padding: 0% 5% 5% 5%;
+}
+
+.section {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;}
+
+.section h2 {
+    color: #041439;
+    font-size: 20px;
+    padding: 5% 0% 5% 0%;
+}
+
+.section p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+}
